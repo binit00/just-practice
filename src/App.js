@@ -22,13 +22,33 @@ function App() {
     )
   return (
     <div className="coin-app">
-      <div className="coin-search">
-        {/* <h1 className="coin-text">Search your desired coin</h1> */}
-        <form action="">
-          <input type="text" className="coin-input" placeholder="Provide the coin name" onChange={handleChange}/>
-        </form>
-
+      <div className='sticky'>
+          <div className="coin-search">
+            {/* <h1 className="coin-text">Search your desired coin</h1> */}
+            <form action="">
+              <input type="text" className="coin-input" placeholder="Provide the coin name" onChange={handleChange}/>
+            </form>
+        
+          </div>
+          <div className='row coin-heading coin-heading-css'>
+            <div className='head-coin '>
+              <h4>Coin Names</h4>
+            </div>
+            <div className='head-Current'>
+              <h4>Current Price</h4>
+            </div>
+            <div className='head-volume'>
+              <h4>Volume</h4>
+            </div>
+            <div className='head-percentage'>
+              <h4>Change in %</h4>
+            </div>
+            <div className='head-cap'>
+              <h4>Market Cap</h4>
+            </div>
+          </div>
       </div>
+      <div className='table-content'>
       {filteredCoins.map(coin=>{
         return(
           <Coin 
@@ -43,7 +63,7 @@ function App() {
           />
         );
       })}
-
+      </div>
 
     </div>
   );

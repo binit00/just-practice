@@ -37,10 +37,10 @@
     width: 100%;
 }
 .coin-price{
-    width:110px;
+    min-width:110px;
 }
 .coin-volume{
-    width: 230px;
+    min-width: 230px;
 }
 .coin-marketcap{
     width: 155px;
