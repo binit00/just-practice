@@ -6,15 +6,15 @@
   font-family: 'Bree Serif', serif;
   /* background-image: linear-gradient(to top, #f43b47 0%, #453a94 100%); */
   color: #fff;
-  background-color: rgb(191, 18, 18);
+  /* background-color: #222629; */
 
 }
 .coin-app{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 64px;
-  margin: 64px;
+  /* margin-top: 10px !important; */
+  /* margin: 64px; */
   color: #fff;
 }
 .coin-search{
@@ -40,4 +40,61 @@ color: #e2e2e2;
 }
 .coin-input::placeholder{
   color: #e2e2e2;
+}
+.coin-heading{
+  display: flex;
+}
+.head-coin{
+  width: 311px;
+  padding-left: 20px;
+}
+.head-Current{
+  min-width: 140px;
+}
+.head-volume{
+  min-width: 200px;
+}
+.head-percentage{
+  min-width: 110px;
+}
+.head-cap{
+  min-width: 115px;
+  padding-left: 15px;
+}
+.table-content{
+  /* height: 800px; */
+}
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding-left: 64px;
+  padding-right: 64px;
+  width: 100%;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 700% 700%;
+  animation: gradient 15s ease infinite;
+}
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+.coin-heading-css{
+  display: flex;
+  align-items: center;
+  padding-left: 248px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
