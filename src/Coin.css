@@ -16,6 +16,7 @@
     align-items: center;
     padding: 24px;
     min-width: 300px;
+    
 }
 .coin img{
     height: 30px;
@@ -25,6 +26,7 @@
 .coin h1{
     font-size: 16px;
     width: 150px;
+    color: #000 !important;
 }
 .coin-symbol{
     text-transform: uppercase;
@@ -35,18 +37,23 @@
     text-align: center;
     justify-content: space-between;
     width: 100%;
+    color: #000 !important;
 }
 .coin-price{
     min-width:110px;
+    color: #000 !important;
 }
 .coin-volume{
     min-width: 230px;
+    color: #000 !important;
 }
 .coin-marketcap{
     width: 155px;
+    color: #000 !important;
 }
 .coin-percent{
     width: 100%;
+    color: #000 !important;
 }
 .red{
     color: #f00606;
