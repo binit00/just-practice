@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 import axios from 'axios'
+import Card from "@material-ui/core/Card";
+import CardContent from "@material-ui/core/CardContent";
 import Coin from './Coin';
+// import Pagination from './Pagination';
 
 
 function App() {
@@ -12,7 +15,14 @@ function App() {
     .then(res=>{
        setCoins(res.data)
        console.log(res.data)
-    }).catch(error=>console.log(error))
+    })
+    setInterval(() => {
+      axios.get('https://api.coingecko.com/api/v3/coins/markets?vs_currency=INR&order=market_cap_desc&per_page=100&page=1&sparkline=false')
+      .then(res=>{
+         setCoins(res.data)
+         console.log(res.data)
+      }).catch(error=>console.log(error))
+    }, 10000);
   }, [])
   const handleChange = e =>{
     setSearch(e.target.value)
@@ -48,7 +58,9 @@ function App() {
             </div>
           </div>
       </div>
-      <div className='table-content'>
+      <Card>
+      <CardContent>
+      <div className='card table-content'>
       {filteredCoins.map(coin=>{
         return(
           <Coin 
@@ -64,7 +76,8 @@ function App() {
         );
       })}
       </div>
-
+      </CardContent>
+      </Card>
     </div>
   );
 }

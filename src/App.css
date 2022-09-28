@@ -43,26 +43,39 @@ color: #e2e2e2;
 }
 .coin-heading{
   display: flex;
+  opacity: 1;
 }
 .head-coin{
   width: 311px;
   padding-left: 20px;
 }
+.head-coin h4{
+  color: #000;
+}
 .head-Current{
   min-width: 140px;
+}
+.head-Current h4{
+  color: #000;
 }
 .head-volume{
   min-width: 200px;
 }
+.head-volume h4{
+  color: #000;
+}
 .head-percentage{
   min-width: 110px;
+}
+.head-percentage h4{
+  color: #000;
 }
 .head-cap{
   min-width: 115px;
   padding-left: 15px;
 }
-.table-content{
-  /* height: 800px; */
+.head-cap h4{
+  color: #000;
 }
 div.sticky {
   position: -webkit-sticky;
@@ -71,9 +84,10 @@ div.sticky {
   padding-left: 64px;
   padding-right: 64px;
   width: 100%;
-	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  
+	/* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 700% 700%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite; */
 }
 body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
